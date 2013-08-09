@@ -7,6 +7,8 @@
 #include <fstream>
 #include <string>
 
+using boost::format;
+
 namespace embryo
 {
     class logger

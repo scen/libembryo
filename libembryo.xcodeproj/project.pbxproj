@@ -8,13 +8,35 @@
 
 /* Begin PBXBuildFile section */
 		C477DBB517B44F3C005DB56D /* logger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C477DBB317B44F3C005DB56D /* logger.cpp */; };
-		C477DBBC17B4609C005DB56D /* logger.h in Headers */ = {isa = PBXBuildFile; fileRef = C477DBBB17B4609C005DB56D /* logger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C477DBC717B47044005DB56D /* module.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C477DBC617B47044005DB56D /* module.cpp */; };
+		C477DBC917B471C5005DB56D /* logger.h in Headers */ = {isa = PBXBuildFile; fileRef = C477DBC817B471C5005DB56D /* logger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C477DBCB17B471CC005DB56D /* module.h in Headers */ = {isa = PBXBuildFile; fileRef = C477DBCA17B471CC005DB56D /* module.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C477DBCD17B473A2005DB56D /* util.h in Headers */ = {isa = PBXBuildFile; fileRef = C477DBCC17B473A2005DB56D /* util.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C477DBCF17B473A9005DB56D /* util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C477DBCE17B473A9005DB56D /* util.cpp */; };
+		C477DBD217B4819F005DB56D /* signature.h in Headers */ = {isa = PBXBuildFile; fileRef = C477DBD017B4819F005DB56D /* signature.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C477DBD317B4819F005DB56D /* sigscan.h in Headers */ = {isa = PBXBuildFile; fileRef = C477DBD117B4819F005DB56D /* sigscan.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C477DBD617B481AC005DB56D /* signature.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C477DBD417B481AC005DB56D /* signature.cpp */; };
+		C477DBD717B481AC005DB56D /* sigscan.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C477DBD517B481AC005DB56D /* sigscan.cpp */; };
+		C477DBD917B48D2A005DB56D /* vmt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C477DBD817B48D2A005DB56D /* vmt.cpp */; };
+		C477DBDB17B48D31005DB56D /* vmt.h in Headers */ = {isa = PBXBuildFile; fileRef = C477DBDA17B48D31005DB56D /* vmt.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C477DBDD17B48F9E005DB56D /* memhelp.h in Headers */ = {isa = PBXBuildFile; fileRef = C477DBDC17B48F9E005DB56D /* memhelp.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C438F98117B43D7B00C028FE /* libembryo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libembryo.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C477DBB317B44F3C005DB56D /* logger.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = logger.cpp; path = src/util/logger.cpp; sourceTree = "<group>"; };
-		C477DBBB17B4609C005DB56D /* logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = logger.h; path = util/logger.h; sourceTree = "<group>"; };
+		C477DBC617B47044005DB56D /* module.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = module.cpp; path = src/mem/module.cpp; sourceTree = "<group>"; };
+		C477DBC817B471C5005DB56D /* logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = logger.h; sourceTree = "<group>"; };
+		C477DBCA17B471CC005DB56D /* module.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = module.h; sourceTree = "<group>"; };
+		C477DBCC17B473A2005DB56D /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
+		C477DBCE17B473A9005DB56D /* util.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = util.cpp; path = src/util/util.cpp; sourceTree = "<group>"; };
+		C477DBD017B4819F005DB56D /* signature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = signature.h; sourceTree = "<group>"; };
+		C477DBD117B4819F005DB56D /* sigscan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sigscan.h; sourceTree = "<group>"; };
+		C477DBD417B481AC005DB56D /* signature.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = signature.cpp; path = src/mem/signature.cpp; sourceTree = "<group>"; };
+		C477DBD517B481AC005DB56D /* sigscan.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = sigscan.cpp; path = src/mem/sigscan.cpp; sourceTree = "<group>"; };
+		C477DBD817B48D2A005DB56D /* vmt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = vmt.cpp; path = src/mem/vmt.cpp; sourceTree = "<group>"; };
+		C477DBDA17B48D31005DB56D /* vmt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vmt.h; sourceTree = "<group>"; };
+		C477DBDC17B48F9E005DB56D /* memhelp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = memhelp.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +70,8 @@
 		C477DBAF17B44B4D005DB56D /* util */ = {
 			isa = PBXGroup;
 			children = (
-				C477DBBB17B4609C005DB56D /* logger.h */,
+				C477DBCC17B473A2005DB56D /* util.h */,
+				C477DBC817B471C5005DB56D /* logger.h */,
 			);
 			name = util;
 			sourceTree = "<group>";
@@ -56,14 +79,39 @@
 		C477DBB017B44B55005DB56D /* util */ = {
 			isa = PBXGroup;
 			children = (
+				C477DBCE17B473A9005DB56D /* util.cpp */,
 				C477DBB317B44F3C005DB56D /* logger.cpp */,
 			);
 			name = util;
 			sourceTree = "<group>";
 		};
+		C477DBC217B4701C005DB56D /* mem */ = {
+			isa = PBXGroup;
+			children = (
+				C477DBDC17B48F9E005DB56D /* memhelp.h */,
+				C477DBDA17B48D31005DB56D /* vmt.h */,
+				C477DBD017B4819F005DB56D /* signature.h */,
+				C477DBD117B4819F005DB56D /* sigscan.h */,
+				C477DBCA17B471CC005DB56D /* module.h */,
+			);
+			name = mem;
+			sourceTree = "<group>";
+		};
+		C477DBC317B47021005DB56D /* mem */ = {
+			isa = PBXGroup;
+			children = (
+				C477DBD817B48D2A005DB56D /* vmt.cpp */,
+				C477DBD417B481AC005DB56D /* signature.cpp */,
+				C477DBD517B481AC005DB56D /* sigscan.cpp */,
+				C477DBC617B47044005DB56D /* module.cpp */,
+			);
+			name = mem;
+			sourceTree = "<group>";
+		};
 		C4A8274317B43E260012D920 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				C477DBC317B47021005DB56D /* mem */,
 				C477DBB017B44B55005DB56D /* util */,
 			);
 			name = Source;
@@ -72,6 +120,7 @@
 		C4A8274417B43E2E0012D920 /* Headers */ = {
 			isa = PBXGroup;
 			children = (
+				C477DBC217B4701C005DB56D /* mem */,
 				C477DBAF17B44B4D005DB56D /* util */,
 			);
 			name = Headers;
@@ -84,7 +133,13 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C477DBBC17B4609C005DB56D /* logger.h in Headers */,
+				C477DBC917B471C5005DB56D /* logger.h in Headers */,
+				C477DBCB17B471CC005DB56D /* module.h in Headers */,
+				C477DBCD17B473A2005DB56D /* util.h in Headers */,
+				C477DBD217B4819F005DB56D /* signature.h in Headers */,
+				C477DBDD17B48F9E005DB56D /* memhelp.h in Headers */,
+				C477DBDB17B48D31005DB56D /* vmt.h in Headers */,
+				C477DBD317B4819F005DB56D /* sigscan.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +195,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C477DBB517B44F3C005DB56D /* logger.cpp in Sources */,
+				C477DBC717B47044005DB56D /* module.cpp in Sources */,
+				C477DBCF17B473A9005DB56D /* util.cpp in Sources */,
+				C477DBD617B481AC005DB56D /* signature.cpp in Sources */,
+				C477DBD717B481AC005DB56D /* sigscan.cpp in Sources */,
+				C477DBD917B48D2A005DB56D /* vmt.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +272,10 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				EXECUTABLE_PREFIX = "";
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include/,
+					.,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = include/libembryo;
 				SKIP_INSTALL = YES;
@@ -223,6 +287,10 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				EXECUTABLE_PREFIX = "";
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include/,
+					.,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = include/libembryo;
 				SKIP_INSTALL = YES;
