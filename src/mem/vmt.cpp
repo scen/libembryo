@@ -1,6 +1,7 @@
 #include "vmt.h"
 
 #include <libembryo/logger.h>
+#include <libembryo/memmgr.h>
 
 #include <cstdlib>
 
@@ -11,24 +12,18 @@ namespace embryo
 	unsigned int vmt::countFuncs(void **vmt)
 	{
 		int cnt = -1;
-
-        vm_region_basic_info_data_t info;
+        vm_prot_t prot;
         do {
             cnt++;
-	        vm_size_t vmsize;
-	        vm_address_t address = (vm_address_t)vmt[cnt];
-	        mach_msg_type_number_t infoCount = VM_REGION_BASIC_INFO_COUNT;
-	        memory_object_name_t object;
-        	
-        	kern_return_t status = vm_region(mach_task_self(), &address, &vmsize, VM_REGION_BASIC_INFO, (vm_region_info_t)&info,
-                                         &infoCount, &object);
+            
+        	kern_return_t status = memmgr::getMemoryProtection(vmt[cnt], prot);
         	if (status)
         	{
         		log().error("vm_region() failed");
         		break;
         	}
-        } while (((info.protection & VM_PROT_EXECUTE) && (info.protection & VM_PROT_READ)) || // read/exec
-        	((info.protection & VM_PROT_READ) && (info.protection & VM_PROT_EXECUTE) && (info.protection & VM_PROT_WRITE))); // read/write/exec
+        } while (((prot & VM_PROT_EXECUTE) && (prot & VM_PROT_READ)) || // read/exec
+                 ((prot & VM_PROT_READ) && (prot & VM_PROT_EXECUTE) && (prot & VM_PROT_WRITE))); // read/write/exec
         
         log().info(format("vfunc count: %d") % cnt);
 		return cnt;

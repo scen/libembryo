@@ -20,6 +20,47 @@
 		C477DBD917B48D2A005DB56D /* vmt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C477DBD817B48D2A005DB56D /* vmt.cpp */; };
 		C477DBDB17B48D31005DB56D /* vmt.h in Headers */ = {isa = PBXBuildFile; fileRef = C477DBDA17B48D31005DB56D /* vmt.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C477DBDD17B48F9E005DB56D /* memhelp.h in Headers */ = {isa = PBXBuildFile; fileRef = C477DBDC17B48F9E005DB56D /* memhelp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C477DBE217B4CEBB005DB56D /* distorm.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C477DBDF17B4CE98005DB56D /* distorm.a */; };
+		C477DBE517B4CEC3005DB56D /* distorm.h in Headers */ = {isa = PBXBuildFile; fileRef = C477DBE317B4CEC3005DB56D /* distorm.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C477DBE617B4CEC3005DB56D /* mnemonics.h in Headers */ = {isa = PBXBuildFile; fileRef = C477DBE417B4CEC3005DB56D /* mnemonics.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C477DBE817B4D5B9005DB56D /* detour.h in Headers */ = {isa = PBXBuildFile; fileRef = C477DBE717B4D5B9005DB56D /* detour.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C477DBEA17B4D5C2005DB56D /* detour.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C477DBE917B4D5C2005DB56D /* detour.cpp */; };
+		C477DC5217B560C4005DB56D /* ApiBegin.h in Headers */ = {isa = PBXBuildFile; fileRef = C477DC3017B560C4005DB56D /* ApiBegin.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		C477DC5317B560C4005DB56D /* ApiEnd.h in Headers */ = {isa = PBXBuildFile; fileRef = C477DC3117B560C4005DB56D /* ApiEnd.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		C477DC5417B560C4005DB56D /* AsmJit.h in Headers */ = {isa = PBXBuildFile; fileRef = C477DC3217B560C4005DB56D /* AsmJit.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		C477DC5517B560C4005DB56D /* Assembler.h in Headers */ = {isa = PBXBuildFile; fileRef = C477DC3317B560C4005DB56D /* Assembler.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		C477DC5617B560C4005DB56D /* AssemblerX86X64.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C477DC3417B560C4005DB56D /* AssemblerX86X64.cpp */; };
+		C477DC5717B560C4005DB56D /* AssemblerX86X64.h in Headers */ = {isa = PBXBuildFile; fileRef = C477DC3517B560C4005DB56D /* AssemblerX86X64.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		C477DC5817B560C4005DB56D /* Build.h in Headers */ = {isa = PBXBuildFile; fileRef = C477DC3617B560C4005DB56D /* Build.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		C477DC5917B560C4005DB56D /* CodeGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C477DC3717B560C4005DB56D /* CodeGenerator.cpp */; };
+		C477DC5A17B560C4005DB56D /* CodeGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = C477DC3817B560C4005DB56D /* CodeGenerator.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		C477DC5B17B560C4005DB56D /* Compiler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C477DC3917B560C4005DB56D /* Compiler.cpp */; };
+		C477DC5C17B560C4005DB56D /* Compiler.h in Headers */ = {isa = PBXBuildFile; fileRef = C477DC3A17B560C4005DB56D /* Compiler.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		C477DC5D17B560C4005DB56D /* CompilerX86X64.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C477DC3B17B560C4005DB56D /* CompilerX86X64.cpp */; };
+		C477DC5E17B560C4005DB56D /* CompilerX86X64.h in Headers */ = {isa = PBXBuildFile; fileRef = C477DC3C17B560C4005DB56D /* CompilerX86X64.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		C477DC5F17B560C4005DB56D /* Config.h in Headers */ = {isa = PBXBuildFile; fileRef = C477DC3D17B560C4005DB56D /* Config.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		C477DC6017B560C4005DB56D /* CpuInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C477DC3E17B560C4005DB56D /* CpuInfo.cpp */; };
+		C477DC6117B560C4005DB56D /* CpuInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = C477DC3F17B560C4005DB56D /* CpuInfo.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		C477DC6217B560C4005DB56D /* Defs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C477DC4017B560C4005DB56D /* Defs.cpp */; };
+		C477DC6317B560C4005DB56D /* Defs.h in Headers */ = {isa = PBXBuildFile; fileRef = C477DC4117B560C4005DB56D /* Defs.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		C477DC6417B560C4005DB56D /* DefsX86X64.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C477DC4217B560C4005DB56D /* DefsX86X64.cpp */; };
+		C477DC6517B560C4005DB56D /* DefsX86X64.h in Headers */ = {isa = PBXBuildFile; fileRef = C477DC4317B560C4005DB56D /* DefsX86X64.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		C477DC6617B560C4005DB56D /* Logger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C477DC4417B560C4005DB56D /* Logger.cpp */; };
+		C477DC6717B560C4005DB56D /* Logger.h in Headers */ = {isa = PBXBuildFile; fileRef = C477DC4517B560C4005DB56D /* Logger.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		C477DC6817B560C4005DB56D /* MemoryManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C477DC4617B560C4005DB56D /* MemoryManager.cpp */; };
+		C477DC6917B560C4005DB56D /* MemoryManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C477DC4717B560C4005DB56D /* MemoryManager.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		C477DC6A17B560C4005DB56D /* MemoryMarker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C477DC4817B560C4005DB56D /* MemoryMarker.cpp */; };
+		C477DC6B17B560C4005DB56D /* MemoryMarker.h in Headers */ = {isa = PBXBuildFile; fileRef = C477DC4917B560C4005DB56D /* MemoryMarker.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		C477DC6C17B560C4005DB56D /* Operand.h in Headers */ = {isa = PBXBuildFile; fileRef = C477DC4A17B560C4005DB56D /* Operand.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		C477DC6D17B560C4005DB56D /* OperandX86X64.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C477DC4B17B560C4005DB56D /* OperandX86X64.cpp */; };
+		C477DC6E17B560C4005DB56D /* OperandX86X64.h in Headers */ = {isa = PBXBuildFile; fileRef = C477DC4C17B560C4005DB56D /* OperandX86X64.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		C477DC6F17B560C4005DB56D /* Platform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C477DC4D17B560C4005DB56D /* Platform.cpp */; };
+		C477DC7017B560C4005DB56D /* Platform.h in Headers */ = {isa = PBXBuildFile; fileRef = C477DC4E17B560C4005DB56D /* Platform.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		C477DC7117B560C4005DB56D /* Util_p.h in Headers */ = {isa = PBXBuildFile; fileRef = C477DC4F17B560C4005DB56D /* Util_p.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		C477DC7217B560C4005DB56D /* Util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C477DC5017B560C4005DB56D /* Util.cpp */; };
+		C477DC7317B560C4005DB56D /* Util.h in Headers */ = {isa = PBXBuildFile; fileRef = C477DC5117B560C4005DB56D /* Util.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		C477DC7717B565CB005DB56D /* memmgr.h in Headers */ = {isa = PBXBuildFile; fileRef = C477DC7617B565CB005DB56D /* memmgr.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C477DC7917B565D5005DB56D /* memmgr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C477DC7817B565D5005DB56D /* memmgr.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +78,47 @@
 		C477DBD817B48D2A005DB56D /* vmt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = vmt.cpp; path = src/mem/vmt.cpp; sourceTree = "<group>"; };
 		C477DBDA17B48D31005DB56D /* vmt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vmt.h; sourceTree = "<group>"; };
 		C477DBDC17B48F9E005DB56D /* memhelp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = memhelp.h; sourceTree = "<group>"; };
+		C477DBDF17B4CE98005DB56D /* distorm.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = distorm.a; path = libs/distorm/distorm.a; sourceTree = "<group>"; };
+		C477DBE317B4CEC3005DB56D /* distorm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = distorm.h; path = libs/distorm/distorm.h; sourceTree = "<group>"; };
+		C477DBE417B4CEC3005DB56D /* mnemonics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mnemonics.h; path = libs/distorm/mnemonics.h; sourceTree = "<group>"; };
+		C477DBE717B4D5B9005DB56D /* detour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = detour.h; sourceTree = "<group>"; };
+		C477DBE917B4D5C2005DB56D /* detour.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = detour.cpp; path = src/mem/detour.cpp; sourceTree = "<group>"; };
+		C477DC3017B560C4005DB56D /* ApiBegin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ApiBegin.h; path = libs/asmjit/ApiBegin.h; sourceTree = "<group>"; };
+		C477DC3117B560C4005DB56D /* ApiEnd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ApiEnd.h; path = libs/asmjit/ApiEnd.h; sourceTree = "<group>"; };
+		C477DC3217B560C4005DB56D /* AsmJit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AsmJit.h; path = libs/asmjit/AsmJit.h; sourceTree = "<group>"; };
+		C477DC3317B560C4005DB56D /* Assembler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Assembler.h; path = libs/asmjit/Assembler.h; sourceTree = "<group>"; };
+		C477DC3417B560C4005DB56D /* AssemblerX86X64.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AssemblerX86X64.cpp; path = libs/asmjit/AssemblerX86X64.cpp; sourceTree = "<group>"; };
+		C477DC3517B560C4005DB56D /* AssemblerX86X64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AssemblerX86X64.h; path = libs/asmjit/AssemblerX86X64.h; sourceTree = "<group>"; };
+		C477DC3617B560C4005DB56D /* Build.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Build.h; path = libs/asmjit/Build.h; sourceTree = "<group>"; };
+		C477DC3717B560C4005DB56D /* CodeGenerator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CodeGenerator.cpp; path = libs/asmjit/CodeGenerator.cpp; sourceTree = "<group>"; };
+		C477DC3817B560C4005DB56D /* CodeGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CodeGenerator.h; path = libs/asmjit/CodeGenerator.h; sourceTree = "<group>"; };
+		C477DC3917B560C4005DB56D /* Compiler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Compiler.cpp; path = libs/asmjit/Compiler.cpp; sourceTree = "<group>"; };
+		C477DC3A17B560C4005DB56D /* Compiler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Compiler.h; path = libs/asmjit/Compiler.h; sourceTree = "<group>"; };
+		C477DC3B17B560C4005DB56D /* CompilerX86X64.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CompilerX86X64.cpp; path = libs/asmjit/CompilerX86X64.cpp; sourceTree = "<group>"; };
+		C477DC3C17B560C4005DB56D /* CompilerX86X64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CompilerX86X64.h; path = libs/asmjit/CompilerX86X64.h; sourceTree = "<group>"; };
+		C477DC3D17B560C4005DB56D /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Config.h; path = libs/asmjit/Config.h; sourceTree = "<group>"; };
+		C477DC3E17B560C4005DB56D /* CpuInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CpuInfo.cpp; path = libs/asmjit/CpuInfo.cpp; sourceTree = "<group>"; };
+		C477DC3F17B560C4005DB56D /* CpuInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CpuInfo.h; path = libs/asmjit/CpuInfo.h; sourceTree = "<group>"; };
+		C477DC4017B560C4005DB56D /* Defs.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Defs.cpp; path = libs/asmjit/Defs.cpp; sourceTree = "<group>"; };
+		C477DC4117B560C4005DB56D /* Defs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Defs.h; path = libs/asmjit/Defs.h; sourceTree = "<group>"; };
+		C477DC4217B560C4005DB56D /* DefsX86X64.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DefsX86X64.cpp; path = libs/asmjit/DefsX86X64.cpp; sourceTree = "<group>"; };
+		C477DC4317B560C4005DB56D /* DefsX86X64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DefsX86X64.h; path = libs/asmjit/DefsX86X64.h; sourceTree = "<group>"; };
+		C477DC4417B560C4005DB56D /* Logger.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Logger.cpp; path = libs/asmjit/Logger.cpp; sourceTree = "<group>"; };
+		C477DC4517B560C4005DB56D /* Logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Logger.h; path = libs/asmjit/Logger.h; sourceTree = "<group>"; };
+		C477DC4617B560C4005DB56D /* MemoryManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MemoryManager.cpp; path = libs/asmjit/MemoryManager.cpp; sourceTree = "<group>"; };
+		C477DC4717B560C4005DB56D /* MemoryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MemoryManager.h; path = libs/asmjit/MemoryManager.h; sourceTree = "<group>"; };
+		C477DC4817B560C4005DB56D /* MemoryMarker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MemoryMarker.cpp; path = libs/asmjit/MemoryMarker.cpp; sourceTree = "<group>"; };
+		C477DC4917B560C4005DB56D /* MemoryMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MemoryMarker.h; path = libs/asmjit/MemoryMarker.h; sourceTree = "<group>"; };
+		C477DC4A17B560C4005DB56D /* Operand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Operand.h; path = libs/asmjit/Operand.h; sourceTree = "<group>"; };
+		C477DC4B17B560C4005DB56D /* OperandX86X64.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OperandX86X64.cpp; path = libs/asmjit/OperandX86X64.cpp; sourceTree = "<group>"; };
+		C477DC4C17B560C4005DB56D /* OperandX86X64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OperandX86X64.h; path = libs/asmjit/OperandX86X64.h; sourceTree = "<group>"; };
+		C477DC4D17B560C4005DB56D /* Platform.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Platform.cpp; path = libs/asmjit/Platform.cpp; sourceTree = "<group>"; };
+		C477DC4E17B560C4005DB56D /* Platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Platform.h; path = libs/asmjit/Platform.h; sourceTree = "<group>"; };
+		C477DC4F17B560C4005DB56D /* Util_p.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Util_p.h; path = libs/asmjit/Util_p.h; sourceTree = "<group>"; };
+		C477DC5017B560C4005DB56D /* Util.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Util.cpp; path = libs/asmjit/Util.cpp; sourceTree = "<group>"; };
+		C477DC5117B560C4005DB56D /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Util.h; path = libs/asmjit/Util.h; sourceTree = "<group>"; };
+		C477DC7617B565CB005DB56D /* memmgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = memmgr.h; sourceTree = "<group>"; };
+		C477DC7817B565D5005DB56D /* memmgr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = memmgr.cpp; path = src/mem/memmgr.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C477DBE217B4CEBB005DB56D /* distorm.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +136,7 @@
 		C438F97817B43D7B00C028FE = {
 			isa = PBXGroup;
 			children = (
+				C477DBDE17B4CE88005DB56D /* Libs */,
 				C4A8274417B43E2E0012D920 /* Headers */,
 				C4A8274317B43E260012D920 /* Source */,
 				C438F98217B43D7B00C028FE /* Products */,
@@ -88,6 +172,8 @@
 		C477DBC217B4701C005DB56D /* mem */ = {
 			isa = PBXGroup;
 			children = (
+				C477DC7617B565CB005DB56D /* memmgr.h */,
+				C477DBE717B4D5B9005DB56D /* detour.h */,
 				C477DBDC17B48F9E005DB56D /* memhelp.h */,
 				C477DBDA17B48D31005DB56D /* vmt.h */,
 				C477DBD017B4819F005DB56D /* signature.h */,
@@ -100,12 +186,82 @@
 		C477DBC317B47021005DB56D /* mem */ = {
 			isa = PBXGroup;
 			children = (
+				C477DC7817B565D5005DB56D /* memmgr.cpp */,
+				C477DBE917B4D5C2005DB56D /* detour.cpp */,
 				C477DBD817B48D2A005DB56D /* vmt.cpp */,
 				C477DBD417B481AC005DB56D /* signature.cpp */,
 				C477DBD517B481AC005DB56D /* sigscan.cpp */,
 				C477DBC617B47044005DB56D /* module.cpp */,
 			);
 			name = mem;
+			sourceTree = "<group>";
+		};
+		C477DBDE17B4CE88005DB56D /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				C477DC7417B560CC005DB56D /* AsmJit */,
+				C477DBE117B4CEB2005DB56D /* Distorm */,
+			);
+			name = Libs;
+			sourceTree = "<group>";
+		};
+		C477DBE117B4CEB2005DB56D /* Distorm */ = {
+			isa = PBXGroup;
+			children = (
+				C477DBE317B4CEC3005DB56D /* distorm.h */,
+				C477DBE417B4CEC3005DB56D /* mnemonics.h */,
+				C477DBDF17B4CE98005DB56D /* distorm.a */,
+			);
+			name = Distorm;
+			sourceTree = "<group>";
+		};
+		C477DC7417B560CC005DB56D /* AsmJit */ = {
+			isa = PBXGroup;
+			children = (
+				C477DC7517B56256005DB56D /* Source */,
+				C477DC3217B560C4005DB56D /* AsmJit.h */,
+			);
+			name = AsmJit;
+			sourceTree = "<group>";
+		};
+		C477DC7517B56256005DB56D /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				C477DC3017B560C4005DB56D /* ApiBegin.h */,
+				C477DC3117B560C4005DB56D /* ApiEnd.h */,
+				C477DC3317B560C4005DB56D /* Assembler.h */,
+				C477DC3417B560C4005DB56D /* AssemblerX86X64.cpp */,
+				C477DC3517B560C4005DB56D /* AssemblerX86X64.h */,
+				C477DC3617B560C4005DB56D /* Build.h */,
+				C477DC3717B560C4005DB56D /* CodeGenerator.cpp */,
+				C477DC3817B560C4005DB56D /* CodeGenerator.h */,
+				C477DC3917B560C4005DB56D /* Compiler.cpp */,
+				C477DC3A17B560C4005DB56D /* Compiler.h */,
+				C477DC3B17B560C4005DB56D /* CompilerX86X64.cpp */,
+				C477DC3C17B560C4005DB56D /* CompilerX86X64.h */,
+				C477DC3D17B560C4005DB56D /* Config.h */,
+				C477DC3E17B560C4005DB56D /* CpuInfo.cpp */,
+				C477DC3F17B560C4005DB56D /* CpuInfo.h */,
+				C477DC4017B560C4005DB56D /* Defs.cpp */,
+				C477DC4117B560C4005DB56D /* Defs.h */,
+				C477DC4217B560C4005DB56D /* DefsX86X64.cpp */,
+				C477DC4317B560C4005DB56D /* DefsX86X64.h */,
+				C477DC4417B560C4005DB56D /* Logger.cpp */,
+				C477DC4517B560C4005DB56D /* Logger.h */,
+				C477DC4617B560C4005DB56D /* MemoryManager.cpp */,
+				C477DC4717B560C4005DB56D /* MemoryManager.h */,
+				C477DC4817B560C4005DB56D /* MemoryMarker.cpp */,
+				C477DC4917B560C4005DB56D /* MemoryMarker.h */,
+				C477DC4A17B560C4005DB56D /* Operand.h */,
+				C477DC4B17B560C4005DB56D /* OperandX86X64.cpp */,
+				C477DC4C17B560C4005DB56D /* OperandX86X64.h */,
+				C477DC4D17B560C4005DB56D /* Platform.cpp */,
+				C477DC4E17B560C4005DB56D /* Platform.h */,
+				C477DC4F17B560C4005DB56D /* Util_p.h */,
+				C477DC5017B560C4005DB56D /* Util.cpp */,
+				C477DC5117B560C4005DB56D /* Util.h */,
+			);
+			name = Source;
 			sourceTree = "<group>";
 		};
 		C4A8274317B43E260012D920 /* Source */ = {
@@ -140,6 +296,31 @@
 				C477DBDD17B48F9E005DB56D /* memhelp.h in Headers */,
 				C477DBDB17B48D31005DB56D /* vmt.h in Headers */,
 				C477DBD317B4819F005DB56D /* sigscan.h in Headers */,
+				C477DBE517B4CEC3005DB56D /* distorm.h in Headers */,
+				C477DBE617B4CEC3005DB56D /* mnemonics.h in Headers */,
+				C477DC7717B565CB005DB56D /* memmgr.h in Headers */,
+				C477DBE817B4D5B9005DB56D /* detour.h in Headers */,
+				C477DC5417B560C4005DB56D /* AsmJit.h in Headers */,
+				C477DC5217B560C4005DB56D /* ApiBegin.h in Headers */,
+				C477DC5317B560C4005DB56D /* ApiEnd.h in Headers */,
+				C477DC5517B560C4005DB56D /* Assembler.h in Headers */,
+				C477DC5717B560C4005DB56D /* AssemblerX86X64.h in Headers */,
+				C477DC5817B560C4005DB56D /* Build.h in Headers */,
+				C477DC5A17B560C4005DB56D /* CodeGenerator.h in Headers */,
+				C477DC5C17B560C4005DB56D /* Compiler.h in Headers */,
+				C477DC5E17B560C4005DB56D /* CompilerX86X64.h in Headers */,
+				C477DC5F17B560C4005DB56D /* Config.h in Headers */,
+				C477DC6117B560C4005DB56D /* CpuInfo.h in Headers */,
+				C477DC6317B560C4005DB56D /* Defs.h in Headers */,
+				C477DC6517B560C4005DB56D /* DefsX86X64.h in Headers */,
+				C477DC6717B560C4005DB56D /* Logger.h in Headers */,
+				C477DC6917B560C4005DB56D /* MemoryManager.h in Headers */,
+				C477DC6B17B560C4005DB56D /* MemoryMarker.h in Headers */,
+				C477DC6C17B560C4005DB56D /* Operand.h in Headers */,
+				C477DC6E17B560C4005DB56D /* OperandX86X64.h in Headers */,
+				C477DC7017B560C4005DB56D /* Platform.h in Headers */,
+				C477DC7117B560C4005DB56D /* Util_p.h in Headers */,
+				C477DC7317B560C4005DB56D /* Util.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +381,21 @@
 				C477DBD617B481AC005DB56D /* signature.cpp in Sources */,
 				C477DBD717B481AC005DB56D /* sigscan.cpp in Sources */,
 				C477DBD917B48D2A005DB56D /* vmt.cpp in Sources */,
+				C477DBEA17B4D5C2005DB56D /* detour.cpp in Sources */,
+				C477DC5617B560C4005DB56D /* AssemblerX86X64.cpp in Sources */,
+				C477DC5917B560C4005DB56D /* CodeGenerator.cpp in Sources */,
+				C477DC5B17B560C4005DB56D /* Compiler.cpp in Sources */,
+				C477DC5D17B560C4005DB56D /* CompilerX86X64.cpp in Sources */,
+				C477DC6017B560C4005DB56D /* CpuInfo.cpp in Sources */,
+				C477DC6217B560C4005DB56D /* Defs.cpp in Sources */,
+				C477DC6417B560C4005DB56D /* DefsX86X64.cpp in Sources */,
+				C477DC6617B560C4005DB56D /* Logger.cpp in Sources */,
+				C477DC6817B560C4005DB56D /* MemoryManager.cpp in Sources */,
+				C477DC6A17B560C4005DB56D /* MemoryMarker.cpp in Sources */,
+				C477DC6D17B560C4005DB56D /* OperandX86X64.cpp in Sources */,
+				C477DC6F17B560C4005DB56D /* Platform.cpp in Sources */,
+				C477DC7217B560C4005DB56D /* Util.cpp in Sources */,
+				C477DC7917B565D5005DB56D /* memmgr.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,7 +407,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -233,7 +429,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = /usr/local/include/;
+				HEADER_SEARCH_PATHS = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -245,7 +441,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -261,7 +457,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = /usr/local/include/;
+				HEADER_SEARCH_PATHS = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				SDKROOT = macosx;
 			};
@@ -275,6 +471,10 @@
 				HEADER_SEARCH_PATHS = (
 					/usr/local/include/,
 					.,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/libs/distorm\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = include/libembryo;
@@ -290,6 +490,10 @@
 				HEADER_SEARCH_PATHS = (
 					/usr/local/include/,
 					.,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/libs/distorm\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = include/libembryo;

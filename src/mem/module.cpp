@@ -3,14 +3,6 @@
 #include <logger.h>
 #include <util.h>
 
-#include <sys/types.h>
-#include <mach/error.h>
-#include <mach/vm_types.h>
-#include <mach-o/dyld.h>
-#include <mach-o/getsect.h>
-#include <mach/mach.h>
-#include <sys/stat.h>
-
 namespace embryo
 {
     module::module(const std::string& name) : m_start(0), m_size(0)
@@ -36,6 +28,9 @@ namespace embryo
             found = true;
             m_start = (void *)header;
             m_size = (unsigned int)sb.st_size;
+            m_header = header;
+            m_name = shortName;
+            m_path = std::string(imageName);
             log().info(format("found image %s start=0x%X size=0x%X") % name
                 % m_start % m_size);
             break;

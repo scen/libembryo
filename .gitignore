@@ -12,4 +12,7 @@
 *.la
 *.a
 
+# allow
+!distorm.a
+
 .DS_Store

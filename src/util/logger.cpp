@@ -1,4 +1,4 @@
-#include "logger.h"
+#include <libembryo/logger.h>
 
 #include <sstream>
 #include <sys/time.h>
@@ -38,7 +38,7 @@ namespace embryo
         if (flags & logger::log_file) outFile.flush();
     }
 
-    void logger::error(boost::format fmt)
+    void logger::error(format fmt)
     {
         error(fmt.str());
     }
@@ -48,7 +48,7 @@ namespace embryo
         write(text, BLUE, "warn");
     }
 
-    void logger::warn(boost::format fmt)
+    void logger::warn(format fmt)
     {
         warn(fmt.str());
     }
@@ -58,9 +58,19 @@ namespace embryo
         write(text, GREEN, "info");
     }
 
-    void logger::info(boost::format fmt)
+    void logger::info(format fmt)
     {
         info(fmt.str());
+    }
+
+    void logger::verb(const std::string& text)
+    {
+        write(text, YELLOW, "verb");
+    }
+
+    void logger::verb(format fmt)
+    {
+        verb(fmt.str());
     }
 
     void logger::write(const std::string& text, const std::string& col, const std::string& title)
@@ -82,7 +92,9 @@ namespace embryo
         }
         if (flags & logger::log_file)
         {
-            outFile << header.str() << text << '\n';
+            if (flags & logger::file_color) outFile << col << header.str() << RESET << text << '\n';
+            else outFile << header.str() << text << '\n';
+            if (flags & logger::force_flush) outFile.flush();
         }
     }
 

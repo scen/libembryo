@@ -17,7 +17,9 @@ namespace embryo
         enum
         {
             log_stdout = 1,
-            log_file   = 2
+            log_file   = 2,
+            force_flush= 4,
+            file_color = 8
         };
 
         static logger& get();
@@ -25,13 +27,16 @@ namespace embryo
         void init(int flags, const std::string& fn = "");
 
         void error(const std::string& text);
-        void error(boost::format fmt);
+        void error(format fmt);
 
         void warn(const std::string& text);
-        void warn(boost::format fmt);
+        void warn(format fmt);
 
         void info(const std::string& text);
-        void info(boost::format fmt);
+        void info(format fmt);
+        
+        void verb(const std::string& text);
+        void verb(format fmt);
     private:
         int flags;
         std::ofstream outFile;
