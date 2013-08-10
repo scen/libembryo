@@ -1,3 +1,10 @@
+//
+// libembryo
+//
+// Copyright Stanley Cen 2013
+// Released under the MIT License
+//
+
 #ifndef libembryo_signature_h
 #define libembryo_signature_h
 

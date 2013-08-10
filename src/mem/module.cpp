@@ -1,3 +1,10 @@
+//
+// libembryo
+//
+// Copyright Stanley Cen 2013
+// Released under the MIT License
+//
+
 #include "module.h"
 
 #include <logger.h>
