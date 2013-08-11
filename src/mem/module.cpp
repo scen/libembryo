@@ -38,14 +38,14 @@ namespace embryo
             m_header = header;
             m_name = shortName;
             m_path = std::string(imageName);
-            log().info(format("found image %s start=0x%X size=0x%X") % name
-                % m_start % m_size);
+            m_handle = dlopen(imageName, RTLD_GLOBAL | RTLD_LAZY);
+            log().info(format("found image %s start=%X size=%u handle=%X") % name
+                % m_start % m_size % m_handle);
             break;
         }
         if (!found)
         {
-            log().error(format("unable to found module %s") % name);
+            log().error(format("unable to find module %s") % name);
         }
     }
-
 }
