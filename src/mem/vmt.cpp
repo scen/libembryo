@@ -18,7 +18,7 @@ namespace embryo
 {
 	unsigned int vmt::countFuncs(void **vmt)
 	{
-		int cnt = -1;
+        int cnt = -1;
         vm_prot_t prot;
         do {
             cnt++;
