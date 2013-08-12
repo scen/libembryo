@@ -18,8 +18,11 @@ namespace embryo
     {
     public:
         static kern_return_t getMemoryProtection(void *addr, vm_prot_t &prot);
+        
         static bool writeBytes(void *dst, std::vector<unsigned char>& bytes);
         static std::vector<unsigned char> readBytes(void *src, int len);
+        
+        static void disasm(void *addr, unsigned int numInstructions, unsigned int codeSize);
     };
 }
 

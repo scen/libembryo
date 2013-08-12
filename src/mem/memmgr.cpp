@@ -9,6 +9,9 @@
 
 #include <libembryo/logger.h>
 
+#include "distorm.h"
+#include "mnemonics.h"
+
 namespace embryo
 {
     kern_return_t memmgr::getMemoryProtection(void *addr, vm_prot_t &prot)
@@ -64,5 +67,19 @@ namespace embryo
             ret.push_back(*((unsigned char *)src + i));
         
         return ret;
+    }
+    
+    void memmgr::disasm(void *addr, unsigned int numInstructions, unsigned int codeSize)
+    {
+        _DecodedInst dec[30] = {0};
+        unsigned int decCount = 0;
+        
+        distorm_decode64((_OffsetType)addr, (unsigned char *)addr, codeSize, Decode32Bits, dec, numInstructions, &decCount);
+        
+        for (int i = 0; i < decCount; i++)
+        {
+            log().verb(format("%08llx (%02d) %-20s %s%s%s") % dec[i].offset % dec[i].size % dec[i].instructionHex.p % dec[i].mnemonic.p
+                       % (dec[i].operands.length != 0 ? " " : "") % dec[i].operands.p);
+        }
     }
 }
