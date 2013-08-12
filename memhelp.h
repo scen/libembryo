@@ -25,7 +25,7 @@ namespace embryo
     template<typename Fn>
     inline Fn getvfunc(const void *inst, size_t index, size_t offset = 0)
     {
-        return reinterpret_cast<Fn>(getvtable(inst, offset)[index]);
+        return reinterpret_cast<Fn>(const_cast<void *>(getvtable(inst, offset)[index]));
     }
     
     template<typename T> inline T *makeptr(void *ptr, int offset)

@@ -21,7 +21,7 @@ namespace embryo
     class logger
     {
     public:
-        enum
+        enum logflags
         {
             log_stdout = 1,
             log_file   = 2,
@@ -29,21 +29,21 @@ namespace embryo
             file_color = 8
         };
 
-        static logger& get();
+        static logger &get();
 
-        void init(int flags, const std::string& fn = "");
+        void init(int flags, const std::string &fn = "");
 
-        void error(const std::string& text);
-        void error(format fmt);
+        void error(const std::string &text);
+        void error(const format &fmt);
 
-        void warn(const std::string& text);
-        void warn(format fmt);
+        void warn(const std::string &text);
+        void warn(const format &fmt);
 
-        void info(const std::string& text);
-        void info(format fmt);
+        void info(const std::string &text);
+        void info(const format &fmt);
         
-        void verb(const std::string& text);
-        void verb(format fmt);
+        void verb(const std::string &text);
+        void verb(const format &fmt);
     private:
         int flags;
         std::ofstream outFile;
@@ -51,10 +51,10 @@ namespace embryo
         logger() {};
         ~logger() {};
 
-        void write(const std::string& text, const std::string& col, const std::string& title);
+        void write(const std::string &text, const std::string &col, const std::string &title);
     };
     
-    logger& log();
+    logger &log();
 }
 
 #endif

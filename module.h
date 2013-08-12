@@ -24,7 +24,7 @@ namespace embryo
     class module
     {
     public:
-        module(const std::string& name);
+        module(const std::string &name);
 
         void *start() const { return m_start; }
         unsigned int size() const { return m_size; }

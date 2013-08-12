@@ -11,15 +11,15 @@
 #include <sys/time.h>
 
 // Colors
-#define RESET       "\033[0m"
-#define BLACK       "\033[30m"             /* Black */
-#define RED         "\033[31m"             /* Red */
-#define GREEN       "\033[32m"             /* Green */
-#define YELLOW      "\033[33m"             /* Yellow */
-#define BLUE        "\033[34m"             /* Blue */
-#define MAGENTA     "\033[35m"             /* Magenta */
-#define CYAN        "\033[36m"             /* Cyan */
-#define WHITE       "\033[37m"             /* White */
+#define RESET   "\033[0m"
+#define BLACK   "\033[30m"
+#define RED     "\033[31m"
+#define GREEN   "\033[32m"
+#define YELLOW  "\033[33m"
+#define BLUE    "\033[34m"
+#define MAGENTA "\033[35m"
+#define CYAN    "\033[36m"
+#define WHITE   "\033[37m"
 
 namespace embryo
 {
@@ -45,7 +45,7 @@ namespace embryo
         if (flags & logger::log_file) outFile.flush();
     }
 
-    void logger::error(format fmt)
+    void logger::error(const format &fmt)
     {
         error(fmt.str());
     }
@@ -55,7 +55,7 @@ namespace embryo
         write(text, BLUE, "warn");
     }
 
-    void logger::warn(format fmt)
+    void logger::warn(const format &fmt)
     {
         warn(fmt.str());
     }
@@ -65,7 +65,7 @@ namespace embryo
         write(text, GREEN, "info");
     }
 
-    void logger::info(format fmt)
+    void logger::info(const format &fmt)
     {
         info(fmt.str());
     }
@@ -75,7 +75,7 @@ namespace embryo
         write(text, YELLOW, "verb");
     }
 
-    void logger::verb(format fmt)
+    void logger::verb(const format &fmt)
     {
         verb(fmt.str());
     }

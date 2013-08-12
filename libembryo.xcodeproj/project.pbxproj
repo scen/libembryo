@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C4196D9A17B8C10900B30F93 /* render.h in Headers */ = {isa = PBXBuildFile; fileRef = C4196D9917B8C10900B30F93 /* render.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4196DA417B8C1BF00B30F93 /* color.h in Headers */ = {isa = PBXBuildFile; fileRef = C4196D9F17B8C1BF00B30F93 /* color.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4196DA517B8C1BF00B30F93 /* font.h in Headers */ = {isa = PBXBuildFile; fileRef = C4196DA017B8C1BF00B30F93 /* font.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4196DA617B8C1BF00B30F93 /* point.h in Headers */ = {isa = PBXBuildFile; fileRef = C4196DA117B8C1BF00B30F93 /* point.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4196DA717B8C1BF00B30F93 /* rect.h in Headers */ = {isa = PBXBuildFile; fileRef = C4196DA217B8C1BF00B30F93 /* rect.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4196DA817B8C1BF00B30F93 /* size.h in Headers */ = {isa = PBXBuildFile; fileRef = C4196DA317B8C1BF00B30F93 /* size.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C477DBB517B44F3C005DB56D /* logger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C477DBB317B44F3C005DB56D /* logger.cpp */; };
 		C477DBC717B47044005DB56D /* module.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C477DBC617B47044005DB56D /* module.cpp */; };
 		C477DBC917B471C5005DB56D /* logger.h in Headers */ = {isa = PBXBuildFile; fileRef = C477DBC817B471C5005DB56D /* logger.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -64,6 +70,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C4196D9917B8C10900B30F93 /* render.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = render.h; sourceTree = "<group>"; };
+		C4196D9F17B8C1BF00B30F93 /* color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = color.h; sourceTree = "<group>"; };
+		C4196DA017B8C1BF00B30F93 /* font.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = font.h; sourceTree = "<group>"; };
+		C4196DA117B8C1BF00B30F93 /* point.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = point.h; sourceTree = "<group>"; };
+		C4196DA217B8C1BF00B30F93 /* rect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rect.h; sourceTree = "<group>"; };
+		C4196DA317B8C1BF00B30F93 /* size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = size.h; sourceTree = "<group>"; };
 		C438F98117B43D7B00C028FE /* libembryo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libembryo.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C477DBB317B44F3C005DB56D /* logger.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = logger.cpp; path = src/util/logger.cpp; sourceTree = "<group>"; };
 		C477DBC617B47044005DB56D /* module.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = module.cpp; path = src/mem/module.cpp; sourceTree = "<group>"; };
@@ -149,6 +161,19 @@
 				C438F98117B43D7B00C028FE /* libembryo.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		C44CAFC717B8BA4A00D75DF1 /* render */ = {
+			isa = PBXGroup;
+			children = (
+				C4196D9F17B8C1BF00B30F93 /* color.h */,
+				C4196DA017B8C1BF00B30F93 /* font.h */,
+				C4196DA117B8C1BF00B30F93 /* point.h */,
+				C4196DA217B8C1BF00B30F93 /* rect.h */,
+				C4196DA317B8C1BF00B30F93 /* size.h */,
+				C4196D9917B8C10900B30F93 /* render.h */,
+			);
+			name = render;
 			sourceTree = "<group>";
 		};
 		C477DBAF17B44B4D005DB56D /* util */ = {
@@ -276,6 +301,7 @@
 		C4A8274417B43E2E0012D920 /* Headers */ = {
 			isa = PBXGroup;
 			children = (
+				C44CAFC717B8BA4A00D75DF1 /* render */,
 				C477DBC217B4701C005DB56D /* mem */,
 				C477DBAF17B44B4D005DB56D /* util */,
 			);
@@ -299,7 +325,13 @@
 				C477DBE517B4CEC3005DB56D /* distorm.h in Headers */,
 				C477DBE617B4CEC3005DB56D /* mnemonics.h in Headers */,
 				C477DC7717B565CB005DB56D /* memmgr.h in Headers */,
+				C4196D9A17B8C10900B30F93 /* render.h in Headers */,
 				C477DBE817B4D5B9005DB56D /* detour.h in Headers */,
+				C4196DA417B8C1BF00B30F93 /* color.h in Headers */,
+				C4196DA517B8C1BF00B30F93 /* font.h in Headers */,
+				C4196DA617B8C1BF00B30F93 /* point.h in Headers */,
+				C4196DA717B8C1BF00B30F93 /* rect.h in Headers */,
+				C4196DA817B8C1BF00B30F93 /* size.h in Headers */,
 				C477DC5417B560C4005DB56D /* AsmJit.h in Headers */,
 				C477DC5217B560C4005DB56D /* ApiBegin.h in Headers */,
 				C477DC5317B560C4005DB56D /* ApiEnd.h in Headers */,
@@ -405,7 +437,7 @@
 		C438F98317B43D7B00C028FE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -433,13 +465,14 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
 		C438F98417B43D7B00C028FE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -460,6 +493,7 @@
 				HEADER_SEARCH_PATHS = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
 		};

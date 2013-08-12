@@ -16,7 +16,7 @@ namespace embryo
     {
     public:
         signature(std::string idapattern);
-        signature(const std::string& pattern, const std::string& mask);
+        signature(const std::string &pattern, const std::string &mask);
 
         std::string pattern() const { return m_pattern; };
         std::string mask() const { return m_mask; }
