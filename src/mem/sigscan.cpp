@@ -9,8 +9,13 @@
 
 namespace embryo
 {
-    sigscan::sigscan(signature& sig, module& mod) : m_sig(sig),
+    sigscan::sigscan(signature sig, module& mod) : m_sig(sig),
         start(mod.start()), size(mod.size()), result(NULL), ran(false)
+    {
+    }
+    
+    sigscan::sigscan(signature sig, void *start, unsigned int size) : m_sig(sig),
+        start(start), size(size)
     {
     }
 

@@ -16,7 +16,8 @@ namespace embryo
     class sigscan
     {
     public:
-        sigscan(signature &sig, module &mod);
+        sigscan(signature sig, module &mod);
+        sigscan(signature sig, void *start, unsigned int size);
         void *find();
     private:
         bool ran;

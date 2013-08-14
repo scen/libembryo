@@ -67,6 +67,10 @@
 		C477DC7317B560C4005DB56D /* Util.h in Headers */ = {isa = PBXBuildFile; fileRef = C477DC5117B560C4005DB56D /* Util.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		C477DC7717B565CB005DB56D /* memmgr.h in Headers */ = {isa = PBXBuildFile; fileRef = C477DC7617B565CB005DB56D /* memmgr.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C477DC7917B565D5005DB56D /* memmgr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C477DC7817B565D5005DB56D /* memmgr.cpp */; };
+		C47EC7B117BAB7C900722B9F /* vector3.h in Headers */ = {isa = PBXBuildFile; fileRef = C47EC7B017BAB7C900722B9F /* vector3.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C47EC7B317BABAC600722B9F /* mathlib.h in Headers */ = {isa = PBXBuildFile; fileRef = C47EC7B217BABAC600722B9F /* mathlib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C47EC7B717BAED2900722B9F /* mathlib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C47EC7B517BAED2900722B9F /* mathlib.cpp */; };
+		C47EC7B817BAED2900722B9F /* vector3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C47EC7B617BAED2900722B9F /* vector3.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -131,6 +135,10 @@
 		C477DC5117B560C4005DB56D /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Util.h; path = libs/asmjit/Util.h; sourceTree = "<group>"; };
 		C477DC7617B565CB005DB56D /* memmgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = memmgr.h; sourceTree = "<group>"; };
 		C477DC7817B565D5005DB56D /* memmgr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = memmgr.cpp; path = src/mem/memmgr.cpp; sourceTree = "<group>"; };
+		C47EC7B017BAB7C900722B9F /* vector3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vector3.h; sourceTree = "<group>"; };
+		C47EC7B217BABAC600722B9F /* mathlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mathlib.h; sourceTree = "<group>"; };
+		C47EC7B517BAED2900722B9F /* mathlib.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = mathlib.cpp; path = src/math/mathlib.cpp; sourceTree = "<group>"; };
+		C47EC7B617BAED2900722B9F /* vector3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = vector3.cpp; path = src/math/vector3.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -289,9 +297,28 @@
 			name = Source;
 			sourceTree = "<group>";
 		};
+		C47EC7AF17BAB7A900722B9F /* math */ = {
+			isa = PBXGroup;
+			children = (
+				C47EC7B017BAB7C900722B9F /* vector3.h */,
+				C47EC7B217BABAC600722B9F /* mathlib.h */,
+			);
+			name = math;
+			sourceTree = "<group>";
+		};
+		C47EC7B417BAED1B00722B9F /* math */ = {
+			isa = PBXGroup;
+			children = (
+				C47EC7B517BAED2900722B9F /* mathlib.cpp */,
+				C47EC7B617BAED2900722B9F /* vector3.cpp */,
+			);
+			name = math;
+			sourceTree = "<group>";
+		};
 		C4A8274317B43E260012D920 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				C47EC7B417BAED1B00722B9F /* math */,
 				C477DBC317B47021005DB56D /* mem */,
 				C477DBB017B44B55005DB56D /* util */,
 			);
@@ -301,6 +328,7 @@
 		C4A8274417B43E2E0012D920 /* Headers */ = {
 			isa = PBXGroup;
 			children = (
+				C47EC7AF17BAB7A900722B9F /* math */,
 				C44CAFC717B8BA4A00D75DF1 /* render */,
 				C477DBC217B4701C005DB56D /* mem */,
 				C477DBAF17B44B4D005DB56D /* util */,
@@ -331,6 +359,8 @@
 				C4196DA517B8C1BF00B30F93 /* font.h in Headers */,
 				C4196DA617B8C1BF00B30F93 /* point.h in Headers */,
 				C4196DA717B8C1BF00B30F93 /* rect.h in Headers */,
+				C47EC7B117BAB7C900722B9F /* vector3.h in Headers */,
+				C47EC7B317BABAC600722B9F /* mathlib.h in Headers */,
 				C4196DA817B8C1BF00B30F93 /* size.h in Headers */,
 				C477DC5417B560C4005DB56D /* AsmJit.h in Headers */,
 				C477DC5217B560C4005DB56D /* ApiBegin.h in Headers */,
@@ -428,6 +458,8 @@
 				C477DC6F17B560C4005DB56D /* Platform.cpp in Sources */,
 				C477DC7217B560C4005DB56D /* Util.cpp in Sources */,
 				C477DC7917B565D5005DB56D /* memmgr.cpp in Sources */,
+				C47EC7B717BAED2900722B9F /* mathlib.cpp in Sources */,
+				C47EC7B817BAED2900722B9F /* vector3.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,6 +533,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_X86_VECTOR_INSTRUCTIONS = sse4.2;
 				EXECUTABLE_PREFIX = "";
 				HEADER_SEARCH_PATHS = (
 					/usr/local/include/,
@@ -520,6 +553,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_X86_VECTOR_INSTRUCTIONS = sse4.2;
 				EXECUTABLE_PREFIX = "";
 				HEADER_SEARCH_PATHS = (
 					/usr/local/include/,
