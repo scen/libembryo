@@ -23,7 +23,7 @@ namespace embryo
     {
         if (ran) return result;
 
-        for (unsigned int i = (unsigned int)start; i < (unsigned int)start + size; i++)
+        for (uint64_t i = (uint64_t)start; i < (uint64_t)start + size; i++)
         {
             bool flag = true;
             for (int j = 0; j < m_sig.mask().length(); j++)
