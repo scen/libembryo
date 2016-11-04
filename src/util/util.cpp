@@ -13,7 +13,7 @@ namespace embryo
     {
         std::string getFileNameFromPath(const std::string& path)
         {
-            int pos = path.length();
+            int pos = (int)path.length();
             while (pos && path[pos] != '/') --pos;
             return path.substr(pos + 1);
         }
